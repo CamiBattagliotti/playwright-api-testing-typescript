@@ -1,4 +1,4 @@
-# Playwright API Testing con TypeScript 🚀
+# Playwright API Testing con TypeScript
 
 Proyecto de **testing automatizado de APIs** utilizando [Playwright](https://playwright.dev/) y **TypeScript**.
 
@@ -18,7 +18,7 @@ Este repositorio contiene ejemplos de cómo consumir servicios **REST API**, val
 
 ## Tecnologías utilizadas
 
-- [Playwright](https://playwright.dev/)
+- Playwright
 - TypeScript
 - Node.js
 - Swagger (para documentación y pruebas de APIs)
@@ -40,7 +40,7 @@ Instalar dependencias:
 npm install
 ```
 
-(Optativo) Instalar navegadores de Playwright si fuera necesario:
+Instalar navegadores de Playwright si fuera necesario:
 
 ```bash
 npx playwright install

@@ -1,4 +1,4 @@
-# Playwright API Testing con TypeScript
+# API Testing con Playwright & TypeScript
 
 Proyecto de **testing automatizado de APIs** utilizando [Playwright](https://playwright.dev/) y **TypeScript**.
 
@@ -6,7 +6,7 @@ Este repositorio contiene ejemplos de cómo consumir servicios **REST API**, val
 
 ---
 
-## 📌 Contenido del proyecto
+## Contenido del proyecto
 
 - 🔑 **Consumo de API con token de autenticación**
 - **Request y Response** con Playwright
@@ -25,7 +25,7 @@ Este repositorio contiene ejemplos de cómo consumir servicios **REST API**, val
 
 ---
 
-## 🚀 Instalación y configuración
+## Instalación y configuración
 
 Clonar el repositorio:
 

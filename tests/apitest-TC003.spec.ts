@@ -17,7 +17,7 @@ test('Api Pido Token', async ({ page }) => {
     const request = contexto.request
     // los datos de envío de la clave para recibir el token
     const pidotoken: Claves = {
-        username: "institutoweb",
+        username: "usuario-invalido",
         password: "cursoperformance"
       }
 // Consumir la Api y recibir una respuesta
@@ -31,7 +31,8 @@ const response =
 const respuestaJson: Token = await response.json()
 const mitoken: String = respuestaJson.token
 console.log("Token Recibido: ",mitoken)
-expect(mitoken).not.toBe(undefined)
+expect(mitoken).toBe(undefined)
+expect(response.status()).toBe(401)
 
 })
 

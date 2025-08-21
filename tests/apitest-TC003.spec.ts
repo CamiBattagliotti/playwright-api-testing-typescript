@@ -1,15 +1,17 @@
 import { test, expect, request } from '@playwright/test'
 
-test('Api Pido Token', async ({ page }) => {
+// Solicito token con credenciales Invalidas:
 
     // Definir los tipos de datos:
     interface Claves {
-      username: String;
-      password: String
+        username: String;
+        password: String
     }
     interface Token {
-      token: String;
+        token: String;
     }
+
+test('Solicito token con credenciales Invalidas', async ({ page }) => {
 
     // contexto de valores de la pagina ( cookie, valor guardado )
     const contexto = page.context()
@@ -19,7 +21,7 @@ test('Api Pido Token', async ({ page }) => {
     const pidotoken: Claves = {
         username: "usuario-invalido",
         password: "cursoperformance"
-      }
+        }
 // Consumir la Api y recibir una respuesta
 const response = 
         await request.post('https://cursotesting.com.ar:3000/token',

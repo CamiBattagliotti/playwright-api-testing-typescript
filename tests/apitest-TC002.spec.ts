@@ -1,6 +1,6 @@
 import { test, expect, request } from '@playwright/test'
 
-test('Api Pido Token', async ({ page }) => {
+// Solicito token con credenciales Validas:
 
     // Definir los tipos de datos:
     interface Claves {
@@ -10,6 +10,8 @@ test('Api Pido Token', async ({ page }) => {
     interface Token {
       token: String;
     }
+
+test('Solicito token con credenciales Validas', async ({ page }) => {
 
     // contexto de valores de la pagina ( cookie, valor guardado )
     const contexto = page.context()
@@ -32,6 +34,6 @@ const respuestaJson: Token = await response.json()
 const mitoken: String = respuestaJson.token
 console.log("Token Recibido: ",mitoken)
 expect(mitoken).not.toBe(undefined)
-
+expect(response.status()).toBe(200)
 })
 
